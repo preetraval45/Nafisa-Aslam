@@ -4,7 +4,7 @@ export default function Research() {
   return (
     <section className="page">
       <header className="page__head">
-        <span className="page__tag">04 — Research &amp; Projects</span>
+        <span className="page__tag">Research &amp; Projects</span>
         <h1>Selected work</h1>
       </header>
 

@@ -1,8 +1,14 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Fraunces, Inter } from "next/font/google";
 import "./globals.css";
 import Nav from "@/components/Nav";
 import Footer from "@/components/Footer";
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1,
+  maximumScale: 5,
+};
 
 const fraunces = Fraunces({
   subsets: ["latin"],
@@ -44,11 +50,12 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${fraunces.variable} ${inter.variable}`}>
       <body>
-        <div className="bg-grid" aria-hidden="true" />
-        <div className="bg-orb orb-1" aria-hidden="true" />
-        <div className="bg-orb orb-2" aria-hidden="true" />
-        <div className="bg-orb orb-3" aria-hidden="true" />
-        <svg className="bg-chart" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMax meet" aria-hidden="true">
+        <div className="bg" aria-hidden="true">
+        <div className="bg-grid" />
+        <div className="bg-orb orb-1" />
+        <div className="bg-orb orb-2" />
+        <div className="bg-orb orb-3" />
+        <svg className="bg-chart" viewBox="0 0 1440 500" preserveAspectRatio="xMidYMax meet">
           <defs>
             <linearGradient id="chartFill" x1="0" y1="0" x2="0" y2="1">
               <stop offset="0%" stopColor="#2fd3a5" stopOpacity="0.18" />
@@ -76,6 +83,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
             fill="none"
           />
         </svg>
+        </div>
         <Nav />
         <main className="shell">{children}</main>
         <Footer />

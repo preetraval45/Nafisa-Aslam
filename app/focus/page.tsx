@@ -6,7 +6,7 @@ export default function Focus() {
   return (
     <section className="page">
       <header className="page__head">
-        <span className="page__tag">02 — Focus Areas</span>
+        <span className="page__tag">Focus Areas</span>
         <h1>What I cover</h1>
         <p className="page__sub">
           Three areas where my research, analysis, and storytelling come together as a journalist.

@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <section className="page page--contact">
       <header className="page__head">
-        <span className="page__tag">06 — Contact</span>
+        <span className="page__tag">Contact</span>
         <h1>
           Let&apos;s tell a<br />
           <em>story</em> worth reading.

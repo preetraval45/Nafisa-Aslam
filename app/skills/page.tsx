@@ -6,7 +6,7 @@ export default function Skills() {
   return (
     <section className="page">
       <header className="page__head">
-        <span className="page__tag">03 — Capabilities</span>
+        <span className="page__tag">Capabilities</span>
         <h1>Technical skills &amp; toolkit</h1>
         <p className="page__sub">The analytical methods and tools I work with.</p>
       </header>

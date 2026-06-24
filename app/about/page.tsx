@@ -14,7 +14,7 @@ export default function About() {
   return (
     <section className="page">
       <header className="page__head">
-        <span className="page__tag">01 — About</span>
+        <span className="page__tag">About</span>
         <h1>
           Researcher first.<br />
           <em>Storyteller by purpose.</em>

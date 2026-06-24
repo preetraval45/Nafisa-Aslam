@@ -6,7 +6,7 @@ export default function Education() {
   return (
     <section className="page">
       <header className="page__head">
-        <span className="page__tag">05 — Education</span>
+        <span className="page__tag">Education</span>
         <h1>Academic journey</h1>
       </header>
 
